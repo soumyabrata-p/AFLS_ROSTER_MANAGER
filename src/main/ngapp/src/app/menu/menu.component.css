@@ -1,0 +1,13 @@
+nav mat-toolbar span{
+    font-weight: bold;
+}
+
+nav mat-toolbar span.pullRight{
+    font-weight: bolder;
+    font-size: 40px;
+    color: gold;
+}
+
+.fillToolBar{
+    flex: 1 1 auto;
+}

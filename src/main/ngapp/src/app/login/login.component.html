@@ -1,0 +1,25 @@
+<div class="loginHeaderContainer">
+        <nav>
+                <mat-toolbar>
+                                <span class="pullRight">></span>
+                                <span class="p10">AFLS</span>
+                                <span class="fillToolBar"></span>
+                                <span class="title">ROSTER MANAGER</span>
+                </mat-toolbar>
+        </nav>
+</div>
+
+<div id="loginContent">
+    <mat-card>
+        <mat-card-title>Welcome!</mat-card-title>
+        <mat-card-subtitle>Login to continue</mat-card-subtitle>
+        <mat-form-field class="fullWidth">
+          <input matInput placeholder="Username" [(ngModel)]="username" type="text" autofocus>
+        </mat-form-field>
+        <mat-form-field class="fullWidth">
+            <input matInput placeholder="Enter your password" [(ngModel)]="password" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+        <button mat-button (click)="login()" class="fullWidth loginButton">Login</button>
+    </mat-card>
+</div>
