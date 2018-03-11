@@ -89,7 +89,7 @@
 
     <build>
         <plugins>
-				<plugin>
+				<!--<plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>1.5.0</version>
@@ -116,7 +116,7 @@
                                 <executable>ng.cmd</executable>
                                 <arguments>
                                     <argument>build</argument>
-                                    <argument>--base-href=/</argument>
+                                    <argument>&#45;&#45;base-href=/</argument>
                                 </arguments>
                             </configuration>
                             <goals>
@@ -124,7 +124,7 @@
                             </goals>
                         </execution>
                     </executions>
-                </plugin>
+                </plugin>-->
             <!-- Package as an executable jar/war -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
